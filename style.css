@@ -1,0 +1,242 @@
+*{
+   
+    background-color: #f3f5fc;
+    font-family:'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+    
+}
+body{
+display: flex;
+width: 100%;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 16px;
+}
+main{
+    display:flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    
+}
+.text-area{
+    height: 66%;
+    width: 90%;
+    border: none;
+    color: #0A3871;
+    margin-top:30px;
+    text-transform: lowercase;
+    resize: none;
+   
+}
+::placeholder {
+    color:#0A3871;
+    
+}
+.text-area:focus {
+    outline: none;
+}
+.mensaje{
+    height: 89%;
+    outline: none;
+    background-color: white;
+    background-image: url(/img/persona.png);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    resize: none;
+    
+}
+.mensaje:focus {
+    outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+    padding: 24px;
+    
+}
+ .mensaje::placeholder{
+    color:#0A3871;
+ } 
+.btn-encriptar:hover{
+   color: #0A3871;
+   background-color: #f3f5fc;
+   transition:0.9s;
+
+    
+}
+.btn-desencriptar:hover{
+  color: #f3f5fc;
+  background-color: #0A3871;
+  transition: 0.9s  ;
+}
+.btn-desencriptar{
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.btn-encriptar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 500px;
+    position: absolute;
+    width: 336px;
+}
+.informacion{
+    color: #495057;
+    font-size: 18px;
+    padding-left: 3px;
+}
+.infos{
+    display: flex;
+    align-items: baseline;
+    height: 36px;
+    margin-left: 32px;
+    justify-content:flex-start ;
+}
+.img-info{
+
+    height: 20px;
+    width: 20px;
+    left: 0%;
+    right: 0%;
+    top:0%;
+    bottom: 0%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    height: 30px;
+  
+}
+
+.pra::before{
+display: block;
+
+}
+@media screen and (max-width: 860px){
+    
+   
+    main{
+        flex-direction: column;
+   }
+   .text-area{
+    font-size: 26px;
+    width: 620px;
+    height: 200px;
+    align-items: center;
+   }
+   .btn-desencriptar{
+    width: 270px;
+    font-size: 22px;
+   }
+   .btn-encriptar{
+    width: 270px;
+    font-size: 22px;
+   }
+
+   .mensaje{
+    background-color:white ;
+    border: 1px solid #0A3871;
+    width: 580px;
+    height: 200px;
+    margin: 24px 24px 24px 20px;
+    padding: 0;
+    background-image: none;
+    font-size: 26px;
+    text-align: center;
+   }
+
+   .copiar{
+    margin-left: 240px;
+    position: absolute;
+    margin-top: 178px;
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    background-color:#0A3871;
+    color: white;
+    border: 1px solid black;
+   }
+
+  
+}
+@media screen and (max-width:600px){    
+    
+   main{
+    flex-direction: column;
+   }
+   .text-area{
+    margin-left: 30px;
+    width: 300px;
+    font-size: 18px;
+    height: 300;
+   }
+
+   .btn-encriptar{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+   }
+   .btn-desencriptar{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+   }
+   .informacion{
+    font-size: 15px;
+
+   }
+   .botones{
+    margin: 0px;
+    margin-top: 8px;
+   }
+   .mensaje{
+    height: 400px;
+    width: 300px;
+    font-size: large;
+    margin: 0;
+    margin-left: 33px;
+    background-image: url(/img/persona.png);
+    background-position-y: center;
+    background-position-x:center ;
+   }
+   .infos{
+    margin-left: 30px;
+   }
+   .copiar{
+    margin: 0;
+    margin-left: 112px;
+    margin-top: 350px;
+   }
+}
